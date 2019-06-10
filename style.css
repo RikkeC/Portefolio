@@ -1,0 +1,43 @@
+img {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 2rem;
+    padding: 1vw;
+    margin: 0vw;
+
+}
+
+/****splash****/
+#splash {
+    background-image: url(TIGER%20%201.png);
+    width: 97vw;
+    height: 50vw;
+    background-size: cover;
+    background-position: 50% 0%;
+}
+
+/****menu****/
+header nav a:link {
+    color: black;
+}
+
+header nav a:visited {
+    color: black;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 1.2rem;
+}
+
+header nav a {
+    text-decoration: none;
+    margin: 1vw 0;
+    padding: 1.5vw;
+
+}
