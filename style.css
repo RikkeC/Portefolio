@@ -4,6 +4,7 @@ Indhold:
 - Splash
 - Menu
 - Dropdown menu
+- Footer
 - Media queries?
 **/
 
@@ -24,7 +25,11 @@ h1 {
     font-size: 2.2rem;
     padding: 1vw;
     margin: 0vw;
+}
 
+h6 {
+    font-size: 0.8rem;
+    margin: 1vw;
 }
 
 /****Splash****/
@@ -75,7 +80,7 @@ a:hover {
     display: none;
     position: absolute;
     background-color: #FBBA53;
-    top: 8vw;
+    top: 10vw;
 }
 
 .dropdown a {
@@ -91,11 +96,17 @@ a:hover {
 .dropdown a:hover,
 .dropdown:hover {
     background-color: #FBBA53;
-    opacity: 50%;
 }
 
 .dropdown:hover .dropdown-menu {
     display: block;
+}
+
+/****Footer****/
+
+footer {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -122,6 +133,9 @@ a:hover {
 
     header nav a {
         margin: 0vw;
+    }
 
+    .dropdown-menu {
+        top: 5vw;
     }
 }
