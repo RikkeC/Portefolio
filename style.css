@@ -1,25 +1,44 @@
+/**
+Indhold:
+- Generelt
+- Splash
+- Menu
+- Dropdown menu
+- Media queries?
+**/
+
+
+/****Generelt****/
+* {
+    box-sizing: border-box;
+}
+
 img {
     width: 100%;
 }
 
+
 h1 {
+    /**font-family: 'Amatic SC', cursive;**/
     font-family: 'Fredericka the Great', cursive;
-    font-size: 2rem;
+    font-size: 2.2rem;
     padding: 1vw;
     margin: 0vw;
 
 }
 
-/****splash****/
+/****Splash****/
 #splash {
     background-image: url(TIGER%20%201.png);
     width: 97vw;
-    height: 50vw;
+    height: 133vw;
     background-size: cover;
-    background-position: 50% 0%;
+    background-position: 100% 0%;
+    margin: 0vw;
+
 }
 
-/****menu****/
+/****Menu****/
 header nav a:link {
     color: black;
 }
@@ -31,13 +50,78 @@ header nav a:visited {
 header nav {
     display: flex;
     justify-content: flex-end;
+    /**font-family: 'Amatic SC', cursive;**/
     font-family: 'Fredericka the Great', cursive;
     font-size: 1.2rem;
+    position: sticky;
+    top: 0vw;
+
 }
 
 header nav a {
     text-decoration: none;
     margin: 1vw 0;
-    padding: 1.5vw;
+    padding: 2vw;
 
+}
+
+a:hover {
+    text-decoration: underline black;
+}
+
+/****Dropdown menu****/
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #FBBA53;
+    top: 8vw;
+}
+
+.dropdown a {
+    float: right;
+    text-align: center;
+}
+
+.dropdown-menu a {
+    float: none;
+    display: block;
+}
+
+.dropdown a:hover,
+.dropdown:hover {
+    background-color: #FBBA53;
+    opacity: 50%;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/****Media query****/
+@media only screen and (min-width: 700px) {
+    #splash {
+        width: 100vw;
+        height: 56.25vw;
+        background-position: 0% 0%;
+    }
+
+    #splash h1 {
+        font-size: 3rem;
+        padding: 3vw;
+    }
+}
+
+@media (orientation: landscape) {
+    #splash {
+        width: 100vw;
+        height: 45vw;
+        background-position: 0% 40%;
+    }
+
+    header nav a {
+        margin: 0vw;
+
+    }
 }
