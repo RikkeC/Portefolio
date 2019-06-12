@@ -4,6 +4,7 @@ Indhold:
 - Splash
 - Menu
 - Dropdown menu
+- Om
 - Footer
 - Media queries?
 **/
@@ -18,6 +19,13 @@ img {
     width: 100%;
 }
 
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    padding: 2vw;
+    line-height: 1.5rem;
+}
+
 
 h1 {
     /**font-family: 'Amatic SC', cursive;**/
@@ -27,9 +35,21 @@ h1 {
     margin: 0vw;
 }
 
+h2 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 2rem;
+}
+
 h6 {
     font-size: 0.8rem;
     margin: 1vw;
+}
+
+.overskrift {
+    background-color: #FAB953;
+    display: flex;
+    justify-content: center;
+
 }
 
 /****Splash****/
@@ -67,6 +87,7 @@ header nav a {
     text-decoration: none;
     margin: 1vw 0;
     padding: 2vw;
+    border-right: 0.1rem solid #e3e2e2;
 
 }
 
@@ -79,7 +100,7 @@ a:hover {
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #FBBA53;
+    background-color: #e3e2e2;
     top: 10vw;
 }
 
@@ -95,11 +116,29 @@ a:hover {
 
 .dropdown a:hover,
 .dropdown:hover {
-    background-color: #FBBA53;
+    background-color: #e3e2e2;
 }
 
 .dropdown:hover .dropdown-menu {
     display: block;
+}
+
+/****Om****/
+
+#col-left {
+    margin: 5vw;
+    padding: 2vw;
+}
+
+#col-right {
+    background-color: #FBBA53;
+    display: flex;
+    justify-content: center;
+}
+
+#col-right img {
+    height: 100vw;
+    width: 57vw;
 }
 
 /****Footer****/
@@ -107,6 +146,8 @@ a:hover {
 footer {
     display: flex;
     justify-content: center;
+    background-color: #e3e2e2;
+    width: 100%;
 }
 
 
@@ -121,6 +162,51 @@ footer {
     #splash h1 {
         font-size: 3rem;
         padding: 3vw;
+    }
+
+    #om {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #col-left {
+        margin: 0vw;
+        padding: 0vw;
+
+    }
+
+    #col-right {
+        padding: 4vw;
+        margin: 4vw;
+        background-color: #FBBA53;
+    }
+
+    #col-right img {
+        height: 50vw;
+        width: 29vw;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    #col-left {
+        flex-grow: 1;
+        margin: 2vw;
+        padding: 2vw;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #om {
+        margin: 0vw 5vw;
+    }
+
+    #col-right {
+        flex-grow: 1;
     }
 }
 
@@ -138,4 +224,24 @@ footer {
     .dropdown-menu {
         top: 5vw;
     }
+
+    #om {
+        margin: 0vw 10vw;
+    }
+
+    #col-right img {
+        height: 40vw;
+        width: 23vw;
+    }
+
+    p {
+        line-height: 2rem;
+    }
+
+    #col-left {
+        margin: 0vw;
+        padding: 5vw 0vw 5vw 5vw;
+
+    }
+
 }
