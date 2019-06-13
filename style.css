@@ -54,7 +54,15 @@ h3 {
     font-size: 1.2rem;
 }
 
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+
+
+}
+
 h6 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
     margin: 1vw;
     color: white;
@@ -164,23 +172,17 @@ a:hover {
 }
 
 #portefolio img {
-    width: 50vw;
+    width: 40vw;
     margin: 2vw;
+    opacity: 0.5;
 }
 
-#col-top,
-#col-bottom {
-    display: grid;
-    justify-content: center;
-    margin: 1vw;
-}
 
 .billed-txt {
     display: flex;
-    justify-content: center;
     background-color: #e3e2e2;
-    position: relative;
-    top: 45vw;
+    justify-content: flex-start;
+    margin: 3vw 0vw;
 }
 
 #portefolio a {
@@ -188,9 +190,8 @@ a:hover {
     color: black;
 }
 
-#portefolio img:hover,
-#portefolio a:hover {
-    width: 55vw;
+#portefolio img:hover {
+    opacity: 1.0;
 }
 
 
@@ -240,12 +241,6 @@ footer {
         width: 29vw;
     }
 
-    #col-top,
-    #col-bottom {
-        display: flex;
-        justify-content: center;
-        margin: 0vw;
-    }
 
     #portefolio img {
         width: 30vw;
@@ -257,8 +252,8 @@ footer {
         justify-content: center;
         background-color: #e3e2e2;
         position: relative;
-        top: 30vw;
         margin: 1vw;
+
 
     }
 }
@@ -324,3 +319,5 @@ footer {
     }
 
 }
+
+´
