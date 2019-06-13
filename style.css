@@ -5,6 +5,7 @@ Indhold:
 - Menu
 - Dropdown menu
 - Om
+- Portefolio
 - Footer
 - Media queries?
 **/
@@ -15,8 +16,16 @@ Indhold:
     box-sizing: border-box;
 }
 
+body {
+    margin: 0vw;
+}
+
 img {
     width: 100%;
+}
+
+section {
+    max-width: 1200px;
 }
 
 p {
@@ -40,9 +49,15 @@ h2 {
     font-size: 2rem;
 }
 
+h3 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 1.2rem;
+}
+
 h6 {
     font-size: 0.8rem;
     margin: 1vw;
+    color: white;
 }
 
 .overskrift {
@@ -54,8 +69,8 @@ h6 {
 
 /****Splash****/
 #splash {
-    background-image: url(TIGER%20%201.png);
-    width: 97vw;
+    background-image: url(Billeder/TIGER%20%201.png);
+    width: 100vw;
     height: 133vw;
     background-size: cover;
     background-position: 100% 0%;
@@ -141,6 +156,44 @@ a:hover {
     width: 57vw;
 }
 
+/****Portefolio****/
+
+#portefolio {
+    display: flex;
+    flex-direction: column;
+}
+
+#portefolio img {
+    width: 50vw;
+    margin: 2vw;
+}
+
+#col-top,
+#col-bottom {
+    display: grid;
+    justify-content: center;
+    margin: 1vw;
+}
+
+.billed-txt {
+    display: flex;
+    justify-content: center;
+    background-color: #e3e2e2;
+    position: relative;
+    top: 45vw;
+}
+
+#portefolio a {
+    text-decoration: none;
+    color: black;
+}
+
+#portefolio img:hover,
+#portefolio a:hover {
+    width: 55vw;
+}
+
+
 /****Footer****/
 
 footer {
@@ -186,6 +239,28 @@ footer {
         height: 50vw;
         width: 29vw;
     }
+
+    #col-top,
+    #col-bottom {
+        display: flex;
+        justify-content: center;
+        margin: 0vw;
+    }
+
+    #portefolio img {
+        width: 30vw;
+        margin: 0 3vw;
+    }
+
+    .billed-txt {
+        display: flex;
+        justify-content: center;
+        background-color: #e3e2e2;
+        position: relative;
+        top: 30vw;
+        margin: 1vw;
+
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -213,12 +288,16 @@ footer {
 @media (orientation: landscape) {
     #splash {
         width: 100vw;
-        height: 45vw;
-        background-position: 0% 40%;
+        height: 50vw;
+        background-position: 0% 90%;
+        margin-left: 0vw;
+        background-position: 100% 50%;
+        max-width: none;
     }
 
     header nav a {
-        margin: 0vw;
+        margin: 1vw;
+        padding: 0vw 1vw;
     }
 
     .dropdown-menu {
