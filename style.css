@@ -6,8 +6,12 @@ Indhold:
 - Dropdown menu
 - Om
 - Portefolio
+- Grundlæggende web
+- Grundlæggende Animation
+- Grundlæggende Indhold
+- Grundlæggende UX
 - Footer
-- Media queries?
+- Media queries
 **/
 
 
@@ -160,8 +164,8 @@ a:hover {
 }
 
 #col-right img {
-    height: 100vw;
-    width: 57vw;
+    height: 510px;
+    width: 290px;
 }
 
 /****Portefolio****/
@@ -194,6 +198,67 @@ a:hover {
     opacity: 1.0;
 }
 
+/****Grundlæggende Web****/
+#box.lille {
+    overflow: hidden;
+    max-height: 250px;
+    transition: max-height 0.5s ease-out;
+}
+
+#box.stor {
+    max-height: 3000px;
+    transition: max-height 1s ease-in;
+}
+
+#box.lille span:after {
+    content: "+";
+}
+
+#box.stor span:after {
+    content: "-";
+}
+
+#mere .plus {
+    margin-top: 10px;
+    display: inline-block;
+    color: white;
+    font-weight: 800;
+    width: 20px;
+    height: 20px;
+    background: ;
+}
+
+.gult_overlay1 {
+    height: 40px;
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(rgba(250, 185, 83, 0.01) 0%, rgba(250, 185, 83, 0.66) 53%, rgba(250, 185, 83, 1) 81%, rgba(250, 185, 83, 1) 99%);
+    text-align: center;
+    top: 160vw;
+
+}
+
+.gult_overlay2 {
+    height: 40px;
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(rgba(250, 185, 83, 0.01) 0%, rgba(250, 185, 83, 0.66) 53%, rgba(250, 185, 83, 1) 81%, rgba(250, 185, 83, 1) 99%);
+    text-align: center;
+    top: 210vw;
+
+}
+
+
+#grundlæggende-web img {}
+
+/****Grundlæggende Animation****/
+
+/****Grundlæggende indhold****/
+
+/****Grundlæggende UX****/
+#grundlæggende-ux img {
+    width: 30vw;
+}
 
 /****Footer****/
 
