@@ -5,7 +5,6 @@ Indhold:
 - Menu
 - Dropdown menu
 - Om
-- Portefolio
 - Grundlæggende web
 - Grundlæggende Animation
 - Grundlæggende Indhold
@@ -43,6 +42,7 @@ a {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     margin: 1vw 2vw;
+    font-size: 0.9rem;
 
 }
 
@@ -136,6 +136,7 @@ header nav a {
     margin: 1vw 0;
     padding: 2vw;
     border-right: solid #e3e2e2;
+    font-size: 1rem;
 
 }
 
@@ -178,36 +179,6 @@ a:hover {
     width: 290px;
 }
 
-/****Portefolio****/
-
-#portefolio {
-    display: flex;
-    flex-direction: column;
-}
-
-#portefolio img {
-    width: 40vw;
-    margin: 2vw;
-    opacity: 0.5;
-}
-
-
-.billed-txt {
-    display: flex;
-    background-color: #e3e2e2;
-    justify-content: flex-start;
-    margin: 3vw 0vw;
-}
-
-#portefolio a {
-    text-decoration: none;
-    color: black;
-}
-
-#portefolio img:hover {
-    opacity: 1.0;
-}
-
 /****Grundlæggende Web****/
 
 .text:hover {
@@ -235,6 +206,9 @@ a:hover {
 
 
 /****Grundlæggende indhold****/
+#video {
+    margin: 2vw;
+}
 
 /****Grundlæggende UX****/
 #grundlæggende-ux img {
@@ -367,5 +341,3 @@ footer {
     }
 
 }
-
-´
