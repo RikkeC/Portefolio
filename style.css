@@ -39,28 +39,36 @@ p {
     line-height: 1.5rem;
 }
 
+a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    margin: 1vw 2vw;
+
+}
 
 h1 {
     /**font-family: 'Amatic SC', cursive;**/
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Fredericka the Great';
     font-size: 2.2rem;
     padding: 1vw;
     margin: 0vw;
 }
 
 h2 {
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Fredericka the Great';
     font-size: 2rem;
 }
 
 h3 {
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Fredericka the Great';
     font-size: 1.2rem;
+    margin: 1vw 2vw;
 }
 
 h4 {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
+    margin: 1vw 2vw;
 
 
 }
@@ -79,6 +87,17 @@ h6 {
 
 }
 
+.col-left {
+    margin: 5vw;
+    padding: 2vw;
+}
+
+.col-right {
+    background-color: #FBBA53;
+    display: flex;
+    justify-content: center;
+}
+
 /****Splash****/
 #splash {
     background-image: url(Billeder/TIGER%20%201.png);
@@ -93,6 +112,7 @@ h6 {
 /****Menu****/
 header nav a:link {
     color: black;
+    font-family: 'Fredericka the Great';
 }
 
 header nav a:visited {
@@ -103,18 +123,19 @@ header nav {
     display: flex;
     justify-content: flex-end;
     /**font-family: 'Amatic SC', cursive;**/
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Fredericka the Great';
     font-size: 1.2rem;
     position: sticky;
     top: 0vw;
 
 }
 
+
 header nav a {
     text-decoration: none;
     margin: 1vw 0;
     padding: 2vw;
-    border-right: 0.1rem solid #e3e2e2;
+    border-right: solid #e3e2e2;
 
 }
 
@@ -152,18 +173,7 @@ a:hover {
 
 /****Om****/
 
-#col-left {
-    margin: 5vw;
-    padding: 2vw;
-}
-
-#col-right {
-    background-color: #FBBA53;
-    display: flex;
-    justify-content: center;
-}
-
-#col-right img {
+#om img {
     height: 510px;
     width: 290px;
 }
@@ -249,9 +259,9 @@ a:hover {
 }
 
 
-#grundlæggende-web img {}
-
 /****Grundlæggende Animation****/
+
+
 
 /****Grundlæggende indhold****/
 
@@ -289,19 +299,19 @@ footer {
 
     }
 
-    #col-left {
+    .col-left {
         margin: 0vw;
         padding: 0vw;
 
     }
 
-    #col-right {
+    .col-right {
         padding: 4vw;
         margin: 4vw;
         background-color: #FBBA53;
     }
 
-    #col-right img {
+    .col-right img {
         height: 50vw;
         width: 29vw;
     }
@@ -325,7 +335,7 @@ footer {
 
 @media only screen and (min-width: 900px) {
 
-    #col-left {
+    .col-left {
         flex-grow: 1;
         margin: 2vw;
         padding: 2vw;
@@ -340,7 +350,7 @@ footer {
         margin: 0vw 5vw;
     }
 
-    #col-right {
+    .col-right {
         flex-grow: 1;
     }
 }
@@ -368,7 +378,7 @@ footer {
         margin: 0vw 10vw;
     }
 
-    #col-right img {
+    .col-right img {
         height: 40vw;
         width: 23vw;
     }
@@ -377,7 +387,7 @@ footer {
         line-height: 2rem;
     }
 
-    #col-left {
+    .col-left {
         margin: 0vw;
         padding: 5vw 0vw 5vw 5vw;
 
