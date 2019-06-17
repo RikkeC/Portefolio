@@ -207,7 +207,7 @@ a:hover {
 
 /****Grundlæggende indhold****/
 #video {
-    margin: 2vw;
+    margin: 5vw 0vw;
 }
 
 /****Grundlæggende UX****/
@@ -228,6 +228,38 @@ footer {
 
 
 /****Media query****/
+@media only screen and (min-width: 550px) {
+    #splash {
+        width: 100vw;
+        height: 110vw;
+        background-position: 100% 0%;
+        margin: 0vw;
+    }
+
+    .dropdown-menu {
+        top: 9vw;
+    }
+
+    .text {
+        left: 27vw;
+        top: 175vw;
+
+    }
+}
+
+@media only screen and (min-width:653px) {
+
+    #grundlæggende-web img {
+        width: 70vw;
+    }
+
+    .text {
+        left: 32.2vw;
+        top: 140vw;
+
+    }
+}
+
 @media only screen and (min-width: 700px) {
     #splash {
         width: 100vw;
@@ -243,12 +275,6 @@ footer {
     #om {
         display: flex;
         flex-direction: row;
-
-    }
-
-    .col-left {
-        margin: 0vw;
-        padding: 0vw;
 
     }
 
@@ -275,7 +301,11 @@ footer {
         background-color: #e3e2e2;
         position: relative;
         margin: 1vw;
+    }
 
+    .text {
+        left: 35vw;
+        top: 113vw;
 
     }
 }
@@ -302,13 +332,20 @@ footer {
     }
 }
 
+@media only screen and (min-width: 1000px) {
+    #grundlæggende-web .col-left {
+        margin: 0vw;
+        padding: 5vw;
+
+    }
+}
+
 @media (orientation: landscape) {
     #splash {
         width: 100vw;
-        height: 50vw;
-        background-position: 0% 90%;
+        height: 44vw;
         margin-left: 0vw;
-        background-position: 100% 50%;
+        background-position: 100% 40%;
         max-width: none;
     }
 
@@ -318,7 +355,7 @@ footer {
     }
 
     .dropdown-menu {
-        top: 5vw;
+        top: 3vw;
     }
 
     #om {
@@ -339,5 +376,38 @@ footer {
         padding: 5vw 0vw 5vw 5vw;
 
     }
+
+    #grundlæggende-web {
+        display: flex;
+        align-items: center;
+        max-width: none;
+
+    }
+
+    #grundlæggende-web .col-left {
+        flex-grow: 1;
+        padding: 1vw;
+
+    }
+
+    #grundlæggende-web .col-right {
+        flex-grow: 1;
+        height: 30vw;
+        width: 30vw;
+        margin: 10vw;
+
+    }
+
+    #grundlæggende-web img {
+        width: 40vw;
+        height: 20vw;
+    }
+
+    .text {
+        left: 65vw;
+        top: 35vw;
+
+    }
+
 
 }
