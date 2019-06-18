@@ -249,6 +249,17 @@ footer {
 
 
 /****Media query****/
+@media only screen and (min-width: 530px) {
+    #grundlæggende-web .text {
+        left: 30vw;
+        top: 180vw;
+    }
+
+    #grundlæggende-indhold .text {
+        top: 175vw;
+    }
+}
+
 @media only screen and (min-width: 550px) {
     #splash {
         width: 100vw;
@@ -261,6 +272,35 @@ footer {
         top: 8vw;
     }
 
+    #grundlæggende-web .text {
+        left: 30vw;
+        top: 160vw;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    #grundlæggende-web .text {
+        left: 30vw;
+        top: 150vw;
+    }
+
+    #grundlæggende-indhold .text {
+        top: 165vw;
+        left: 30vw;
+    }
+}
+
+@media only screen and (min-width: 680px) {
+    #grundlæggende-web .text {
+        left: 30vw;
+        top: 140vw;
+    }
+
+    #grundlæggende-indhold .text {
+        top: 140vw;
+        left: 33vw;
+    }
 }
 
 @media only screen and (min-width: 700px) {
@@ -302,6 +342,40 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: column;
+    }
+
+    #grundlæggende-web .text {
+        left: 35vw;
+        top: 135vw;
+    }
+
+    #grundlæggende-indhold .text {
+        top: 132vw;
+        left: 35vw;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #grundlæggende-web .text {
+        left: 35vw;
+        top: 120vw;
+    }
+
+    #grundlæggende-indhold .text {
+        top: 120vw;
+        left: 35vw;
+    }
+}
+
+@media only screen and (min-width: 884px) {
+    #grundlæggende-web .text {
+        left: 37vw;
+        top: 110vw;
+    }
+
+    #grundlæggende-indhold .text {
+        top: 110vw;
+        left: 37vw;
     }
 }
 
@@ -347,9 +421,19 @@ footer {
         top: 7vw;
     }
 
+    #grundlæggende-web .text {
+        left: 37vw;
+        top: 100vw;
+    }
+
+    #grundlæggende-indhold .text {
+        top: 105vw;
+        left: 37vw;
+    }
+
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1250px) {
     #splash {
         width: 100vw;
         height: 45vw;
