@@ -202,7 +202,20 @@ a:hover {
 
 
 /****Grundlæggende Animation****/
+#col-top {
+    margin: 5vw;
+    padding: 2vw;
+}
 
+#col-bottom {
+    margin: 5vw;
+    padding: 2vw;
+}
+
+#spil {
+    display: flex;
+    margin-top: 4vw;
+}
 
 
 /****Grundlæggende indhold****/
@@ -212,9 +225,14 @@ a:hover {
 
 /****Grundlæggende UX****/
 #grundlæggende-ux img {
-    width: 30vw;
-    height: 60vw;
-    margin: 1vw;
+    width: 25vw;
+    height: 48vw;
+    margin: 1.5vw;
+}
+
+.col {
+    margin: 5vw;
+    padding: 2vw;
 }
 
 /****Footer****/
@@ -367,7 +385,7 @@ footer {
         width: 23vw;
     }
 
-    p {
+    #om p {
         line-height: 2rem;
     }
 
@@ -405,9 +423,103 @@ footer {
 
     .text {
         left: 65vw;
-        top: 35vw;
+        top: 33vw;
 
     }
 
+    #grundlæggende-animation {
+        display: flex;
+        flex-direction: column;
+        max-width: none;
 
+    }
+
+    #col-top {
+        display: flex;
+        margin: 2vw;
+        padding: 2vw;
+        flex-grow: 1;
+        height: 30vw;
+    }
+
+    #col-bottom {
+        display: flex;
+        margin: 2vw;
+        padding: 2vw;
+        flex-grow: 1;
+        height: 50vw;
+    }
+
+    #spil {
+        margin-top: 8vw;
+        flex-grow: 1;
+        width: 40vw;
+    }
+
+    #grundlæggende-animation p {
+        padding: 0vw 1vw;
+        margin: 1vw 1vw;
+    }
+
+    #grundlæggende-indhold {
+        max-width: none;
+        display: flex;
+    }
+
+    #grundlæggende-indhold img {
+        width: 35vw;
+        height: 20vw;
+    }
+
+    #grundlæggende-indhold .col-right {
+        width: 20vw;
+        height: 30vw;
+        margin: 10vw;
+    }
+
+    #video {
+        display: flex;
+        justify-content: center;
+        margin: 0vw;
+        margin-bottom: 5vw;
+    }
+
+    video {
+        width: 60vw;
+        height: 40vw;
+    }
+
+    #grundlæggende-indhold p {
+        padding: 1vw 1vw;
+        margin: 1vw 1vw;
+    }
+
+    #grundlæggende-indhold .text {
+        left: 70vw;
+        top: 31vw;
+    }
+
+    #grundlæggende-ux {
+        max-width: none;
+    }
+
+    .col {
+        display: flex;
+    }
+
+    #grundlæggende-ux .beskrivelse {
+        flex-grow: 1;
+
+    }
+
+    #grundlæggende-ux img {
+        width: 15vw;
+        height: 30vw;
+        margin: 0.5vw;
+    }
+
+    .ux-billed {
+        display: flex;
+        margin-top: 5vw;
+    }
 }
