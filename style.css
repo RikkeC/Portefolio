@@ -189,11 +189,11 @@ a:hover {
 .text p {
     font-family: 'Fredericka the Great';
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .text {
-    background: #FAB953;
+    background: #e3e2e2;
     position: absolute;
     left: 27vw;
     top: 200vw;
@@ -212,7 +212,7 @@ a:hover {
     padding: 2vw;
 }
 
-#spil {
+.spil {
     display: flex;
     margin-top: 4vw;
 }
@@ -258,55 +258,9 @@ footer {
     }
 
     .dropdown-menu {
-        top: 9vw;
+        top: 8vw;
     }
 
-    .text {
-        left: 27vw;
-        top: 175vw;
-
-    }
-}
-
-@media only screen and (min-width:635px) {
-    .text {
-        left: 32vw;
-        top: 150vw;
-
-    }
-}
-
-@media only screen and (min-width:653px) {
-
-    #grundlæggende-web img {
-        width: 70vw;
-    }
-
-    .text {
-        left: 32.2vw;
-        top: 140vw;
-
-    }
-
-    #grundlæggende-indhold .text {
-        left: 30vw;
-        top: 145vw;
-
-    }
-}
-
-@media only screen and (min-width:665px) {
-    #grundlæggende-web .text {
-        left: 33vw;
-        top: 130vw;
-
-    }
-
-    #grundlæggende-indhold .text {
-        left: 30vw;
-        top: 140vw;
-
-    }
 }
 
 @media only screen and (min-width: 700px) {
@@ -326,73 +280,8 @@ footer {
 
     }
 
-    .col-right {
-        padding: 4vw;
-        margin: 4vw;
-        background-color: #FBBA53;
-    }
-
-    .col-right img {
-        height: 40vw;
-        width: 50vw;
-    }
-
-
     .dropdown-menu {
         top: 8vw;
-    }
-
-    .col {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #grundlæggende-web .text {
-        left: 33vw;
-        top: 139vw;
-
-    }
-
-    #grundlæggende-indhold .text {
-        left: 33vw;
-        top: 140vw;
-
-    }
-
-    #grundlæggende-ux img {
-        width: 25vw;
-        height: 50vw;
-        margin: 2vw;
-    }
-
-    .ux-billed {
-        display: flex;
-        justify-content: center;
-    }
-
-    #grundlæggende-indhold img {
-        width: 80vw;
-        height: 45vw;
-    }
-
-    #grundlæggende-indhold {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #grundlæggende-web {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #col-top {
-        flex-direction: column;
-        display: flex;
-    }
-
-    #col-bottom {
-        flex-direction: column;
-        display: flex;
     }
 
     video {
@@ -400,6 +289,20 @@ footer {
         height: 40vw;
     }
 
+    section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (min-width: 725px) {
+    #om {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -411,61 +314,20 @@ footer {
         ;
     }
 
-    .col-left {
-        flex-grow: 1;
-        margin: 2vw;
-        padding: 2vw;
-    }
-
     p {
         font-size: 1rem;
         line-height: 1.5rem;
     }
 
     #om {
-        margin: 0vw 5vw;
-    }
+        flex-wrap: wrap;
+        justify-content: center;
 
-    .col-right {
-        flex-grow: 1;
-    }
-
-    #grundlæggende-ux img {
-        width: 25vw;
-        height: 48vw;
-        margin: 1.5vw;
-    }
-
-    #grundlæggende-indhold {
-        flex-direction: column;
-    }
-
-    #grundlæggende-web {
-        flex-direction: column;
-    }
-
-    #col-top {
-        margin: 5vw;
-        padding: 2vw;
-    }
-
-    #col-bottom {
-        margin: 5vw;
-        padding: 2vw;
-    }
-
-    #grundlæggende-animation p {
-        font-size: 0.9rem;
     }
 
 }
 
 @media only screen and (min-width: 1000px) {
-    #grundlæggende-web .col-left {
-        margin: 0vw;
-        padding: 5vw;
-
-    }
 
     #splash {
         width: 100vw;
@@ -474,9 +336,20 @@ footer {
         background-position: 100% 40%;
         max-width: none;
     }
+
+    #om {
+        margin: 0vw 10vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown-menu {
+        top: 7vw;
+    }
+
 }
 
-@media (orientation: landscape) {
+@media only screen and (min-width: 1280px) {
     #splash {
         width: 100vw;
         height: 45vw;
@@ -496,11 +369,19 @@ footer {
 
     #om {
         margin: 0vw 10vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
 
     .col-right img {
+        margin: 2vw;
         height: 40vw;
         width: 23vw;
+    }
+
+    #om .col-right {
+        margin: 2vw;
     }
 
     #om p {
@@ -518,6 +399,7 @@ footer {
         align-items: center;
         max-width: none;
         flex-direction: row;
+        flex-wrap: nowrap;
 
     }
 
@@ -540,49 +422,16 @@ footer {
         height: 20vw;
     }
 
-    .text {
+    #grundlæggende-web .text {
         left: 65vw;
-        top: 33vw;
+        top: 30vw;
 
-    }
-
-    #grundlæggende-animation {
-        display: flex;
-        flex-direction: column;
-        max-width: none;
-
-    }
-
-    #col-top {
-        margin: 2vw;
-        padding: 2vw;
-        flex-grow: 1;
-        height: 30vw;
-    }
-
-    #col-bottom {
-        display: flex;
-        margin: 2vw;
-        padding: 2vw;
-        flex-grow: 1;
-        height: 50vw;
-    }
-
-    #spil {
-        margin-top: 8vw;
-        flex-grow: 1;
-        width: 40vw;
-    }
-
-    #grundlæggende-animation p {
-        padding: 0vw 1vw;
-        margin: 1vw 1vw;
     }
 
     #grundlæggende-indhold {
         max-width: none;
         display: flex;
-        flex-direction: row;
+        flex-wrap: nowrap;
 
     }
 
@@ -625,6 +474,7 @@ footer {
 
     .col {
         display: flex;
+        flex-direction: row;
     }
 
     #grundlæggende-ux .beskrivelse {
@@ -641,5 +491,35 @@ footer {
     .ux-billed {
         display: flex;
         margin-top: 5vw;
+    }
+
+    #grundlæggende-animation {
+        max-width: none;
+    }
+
+    #col-top {
+        display: flex;
+        flex-direction: row;
+        margin: 0vw 1vw;
+    }
+
+    #col-bottom {
+        display: flex;
+        flex-direction: row;
+        margin: 0vw 1vw;
+    }
+
+    .spil {
+        display: flex;
+        margin: 5vw;
+        width: 40vw;
+        height: 30vw;
+    }
+
+
+    #grundlæggende-animation p {
+        font-size: 0.9rem;
+        margin: 0vw 2vw;
+        padding: 0.5vw;
     }
 }
