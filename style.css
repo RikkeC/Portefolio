@@ -220,7 +220,10 @@ a:hover {
 
 /****Grundlæggende indhold****/
 #video {
+    display: flex;
+    justify-content: center;
     margin: 5vw 0vw;
+
 }
 
 /****Grundlæggende UX****/
@@ -326,6 +329,22 @@ footer {
         top: 113vw;
 
     }
+
+    .dropdown-menu {
+        top: 8vw;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #grundlæggende-ux img {
+        width: 20vw;
+        height: 40vw;
+        margin: 0.5vw;
+    }
+
 }
 
 @media only screen and (min-width: 900px) {
