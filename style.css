@@ -287,12 +287,24 @@ footer {
         top: 140vw;
 
     }
+
+    #grundlæggende-indhold .text {
+        left: 30vw;
+        top: 145vw;
+
+    }
 }
 
 @media only screen and (min-width:665px) {
-    .text {
-        left: 32.2vw;
+    #grundlæggende-web .text {
+        left: 33vw;
         top: 130vw;
+
+    }
+
+    #grundlæggende-indhold .text {
+        left: 30vw;
+        top: 140vw;
 
     }
 }
@@ -300,8 +312,7 @@ footer {
 @media only screen and (min-width: 700px) {
     #splash {
         width: 100vw;
-        height: 56.25vw;
-        background-position: 0% 0%;
+        height: 90vw;
     }
 
     #splash h1 {
@@ -326,11 +337,6 @@ footer {
         width: 50vw;
     }
 
-    .text {
-        left: 33vw;
-        top: 135vw;
-
-    }
 
     .dropdown-menu {
         top: 8vw;
@@ -339,6 +345,18 @@ footer {
     .col {
         display: flex;
         flex-direction: column;
+    }
+
+    #grundlæggende-web .text {
+        left: 33vw;
+        top: 139vw;
+
+    }
+
+    #grundlæggende-indhold .text {
+        left: 33vw;
+        top: 140vw;
+
     }
 
     #grundlæggende-ux img {
@@ -353,8 +371,8 @@ footer {
     }
 
     #grundlæggende-indhold img {
-        width: 60vw;
-        height: 35vw;
+        width: 80vw;
+        height: 45vw;
     }
 
     #grundlæggende-indhold {
@@ -377,9 +395,21 @@ footer {
         display: flex;
     }
 
+    video {
+        width: 90vw;
+        height: 40vw;
+    }
+
 }
 
 @media only screen and (min-width: 900px) {
+
+    #splash {
+        width: 100vw;
+        height: 80vw;
+        max-width: none;
+        ;
+    }
 
     .col-left {
         flex-grow: 1;
@@ -400,8 +430,32 @@ footer {
         flex-grow: 1;
     }
 
-    .col {
-        flex-direction: row;
+    #grundlæggende-ux img {
+        width: 25vw;
+        height: 48vw;
+        margin: 1.5vw;
+    }
+
+    #grundlæggende-indhold {
+        flex-direction: column;
+    }
+
+    #grundlæggende-web {
+        flex-direction: column;
+    }
+
+    #col-top {
+        margin: 5vw;
+        padding: 2vw;
+    }
+
+    #col-bottom {
+        margin: 5vw;
+        padding: 2vw;
+    }
+
+    #grundlæggende-animation p {
+        font-size: 0.9rem;
     }
 
 }
@@ -412,12 +466,20 @@ footer {
         padding: 5vw;
 
     }
+
+    #splash {
+        width: 100vw;
+        height: 65vw;
+        margin-left: 0vw;
+        background-position: 100% 40%;
+        max-width: none;
+    }
 }
 
 @media (orientation: landscape) {
     #splash {
         width: 100vw;
-        height: 44vw;
+        height: 45vw;
         margin-left: 0vw;
         background-position: 100% 40%;
         max-width: none;
@@ -492,7 +554,6 @@ footer {
     }
 
     #col-top {
-        display: flex;
         margin: 2vw;
         padding: 2vw;
         flex-grow: 1;
