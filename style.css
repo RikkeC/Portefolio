@@ -268,6 +268,14 @@ footer {
     }
 }
 
+@media only screen and (min-width:635px) {
+    .text {
+        left: 32vw;
+        top: 150vw;
+
+    }
+}
+
 @media only screen and (min-width:653px) {
 
     #grundlæggende-web img {
@@ -277,6 +285,14 @@ footer {
     .text {
         left: 32.2vw;
         top: 140vw;
+
+    }
+}
+
+@media only screen and (min-width:665px) {
+    .text {
+        left: 32.2vw;
+        top: 130vw;
 
     }
 }
@@ -295,7 +311,7 @@ footer {
 
     #om {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
 
     }
 
@@ -306,27 +322,13 @@ footer {
     }
 
     .col-right img {
-        height: 50vw;
-        width: 29vw;
-    }
-
-
-    #portefolio img {
-        width: 30vw;
-        margin: 0 3vw;
-    }
-
-    .billed-txt {
-        display: flex;
-        justify-content: center;
-        background-color: #e3e2e2;
-        position: relative;
-        margin: 1vw;
+        height: 40vw;
+        width: 50vw;
     }
 
     .text {
-        left: 35vw;
-        top: 113vw;
+        left: 33vw;
+        top: 135vw;
 
     }
 
@@ -340,9 +342,39 @@ footer {
     }
 
     #grundlæggende-ux img {
-        width: 20vw;
-        height: 40vw;
-        margin: 0.5vw;
+        width: 25vw;
+        height: 50vw;
+        margin: 2vw;
+    }
+
+    .ux-billed {
+        display: flex;
+        justify-content: center;
+    }
+
+    #grundlæggende-indhold img {
+        width: 60vw;
+        height: 35vw;
+    }
+
+    #grundlæggende-indhold {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #grundlæggende-web {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #col-top {
+        flex-direction: column;
+        display: flex;
+    }
+
+    #col-bottom {
+        flex-direction: column;
+        display: flex;
     }
 
 }
@@ -367,6 +399,11 @@ footer {
     .col-right {
         flex-grow: 1;
     }
+
+    .col {
+        flex-direction: row;
+    }
+
 }
 
 @media only screen and (min-width: 1000px) {
@@ -418,6 +455,7 @@ footer {
         display: flex;
         align-items: center;
         max-width: none;
+        flex-direction: row;
 
     }
 
@@ -483,6 +521,8 @@ footer {
     #grundlæggende-indhold {
         max-width: none;
         display: flex;
+        flex-direction: row;
+
     }
 
     #grundlæggende-indhold img {
